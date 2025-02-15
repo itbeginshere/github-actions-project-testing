@@ -31,6 +31,3 @@ jobs:
 
       - name: Publish with dotnet
         run: dotnet publish src/GitHubActionsDotNet.Api/GitHubActionsDotNet.Api.csproj --configuration Release -o artifacts
-
-
-           
