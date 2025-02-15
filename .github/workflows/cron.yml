@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    name: Verify PR 
+    name: Run CRON 
     runs-on: ubuntu-latest
 
     steps:
