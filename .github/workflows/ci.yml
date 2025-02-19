@@ -45,13 +45,12 @@ jobs:
   deploy-dev:
     name: Deploy Dev
     needs: build
-    # uses: itbeginshere/github-actions-reusable/.github/workflows/step-deploy.yml
     uses: ./.github/workflows/step-deploy.yml
     with:
       env: dev
       reource_group_name: rg-actionsapi-dev
       app_service_name: app-githubactionsapi-dev
-      app_service_slot_name: app-githubactionsapi-dev-slot
+      app_service_slot_name: slot
     secrets: inherit
 
   deploy-prod:
@@ -62,7 +61,7 @@ jobs:
       env: prod
       reource_group_name: rg-actionsapi-prod
       app_service_name: app-githubactionsapi-prod
-      app_service_slot_name: app-githubactionsapi-prod-slot
+      app_service_slot_name: slot
     secrets: inherit
       
 
